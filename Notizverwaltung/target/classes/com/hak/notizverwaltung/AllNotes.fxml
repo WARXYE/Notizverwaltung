@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hak.notizverwaltung.AllNotesController">
+   <children>
+      <TableView fx:id="notesTableView" layoutX="24.0" layoutY="39.0" prefHeight="334.0" prefWidth="551.0">
+         <columns>
+            <TableColumn fx:id="titleColumn" text="Titel" />
+            <TableColumn fx:id="noteColumn" text="Notiz" />
+         </columns>
+      </TableView>
+      <Button fx:id="löschen" layoutX="24.0" layoutY="1.0" mnemonicParsing="false" onAction="#deleteNote" text="löschen" />
+      <Button fx:id="bearbeiten" layoutX="91.0" layoutY="1.0" mnemonicParsing="false" onAction="#editNote" text="bearbeiten" />
+   </children>
+</AnchorPane>
